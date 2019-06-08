@@ -1,0 +1,11 @@
+CREATE TABLE t1 (id TEXT PRIMARY KEY,value TEXT);
+CREATE TABLE t2 (id TEXT PRIMARY KEY,value TEXT);
+
+INSERT INTO t1 VALUES (1,'value1'), (2,'value2');
+INSERT INTO t2 VALUES (3,'value3'), (4,'value4');
+
+INSERT INTO t1(id,value)
+SELECT id, value FROM t2
+WHERE id NOT IN ( SELECT id FROM t1);
+
+SELECT * FROM t1;

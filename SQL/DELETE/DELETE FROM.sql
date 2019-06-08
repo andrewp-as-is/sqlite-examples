@@ -1,0 +1,6 @@
+CREATE TABLE t(
+    colname REAL
+);
+INSERT INTO t VALUES (14.88);
+DELETE FROM t;
+SELECT * FROM t;

@@ -1,0 +1,7 @@
+CREATE TABLE t (
+	column INTEGER
+);
+INSERT INTO t VALUES (14), (88);
+SELECT SUM(column) FROM t;
+
+

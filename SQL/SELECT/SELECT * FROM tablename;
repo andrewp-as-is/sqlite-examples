@@ -1,0 +1,7 @@
+CREATE TABLE tablename(
+    colname INTEGER
+);
+INSERT OR REPLACE INTO tablename VALUES (14);
+SELECT * FROM tablename;
+
+

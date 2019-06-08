@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+f="${BASH_SOURCE[0]%/*}"/file.sql
+( set -x; sqlite3 -init "$f" ':memory:' )
